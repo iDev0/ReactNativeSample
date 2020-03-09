@@ -25,6 +25,7 @@ headerStyle, headerTintColor, headerTitleStyle
 - headerTintColor : 헤더에 들어가는 버튼 또는 타이틀에 대한 글자색 지정이 가능합니다.
 - headerTitleStyle : 헤더에 들어가는 글자에 대한 스타일을 지정합니다 (bold, fontFamily ...)
 */
+
 function App() {
   return (
     <NavigationContainer>
