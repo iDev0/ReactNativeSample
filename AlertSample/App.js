@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert, Platform } from 'react-native';
 
 export default class AlertSample extends Component {
 
   _pressButton() {
+
+    Platform.
     Alert.alert(
       '알림메시지 타이틀이에여'
       , '난 알림메시지 이에여'
@@ -21,7 +23,7 @@ export default class AlertSample extends Component {
       <View style={styles.container}>
         <Button
             style={styles.buttonContainer}
-            title="알림을 보여줘"
+            title="알림을 보여줘111"
             onPress={this._pressButton}
           />
       </View>
