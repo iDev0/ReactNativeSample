@@ -107,6 +107,34 @@ function ThirdDetailScreen({route, navigation}) {
   );
 }
 
+/*
+Header Button
+Header 에는 버튼을 생성할 수 있습니다.
+- options 프로퍼티를 통해 HeaderRight, HeaderLeft 에 버튼을 생성할 수 있습니다.
+- HeaderLeft 의 경우 BackButton 를 이용할 수 있는데 커스텀 할수 있는 기능도 제공한다.
+headerBackTitle, headerTruncatedBackTitle, headerBackImage 
+*/
+function StackScreen() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          headerTitle: props => <LogoTitle {...props} />,
+          headerRight: () => (
+            <Button
+              onPress={() => alert('This is a button!')}
+              title="Info"
+              color="#fff"
+            />
+          ),
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
 
 
 export default App;
